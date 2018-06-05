@@ -1,0 +1,13 @@
+mutation{
+  addAuthor(name: "Steven", age:25) {
+    name
+    age
+  }
+}
+
+mutation{
+  addBook(name: "Name of the Wind", genre:"Fantasy", authorId:"5b16469c09cafa5d68aa103c") {
+    name
+    genre
+  }
+}

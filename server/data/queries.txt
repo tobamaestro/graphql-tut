@@ -1,0 +1,71 @@
+{
+  author(id: "5b1646cc09cafa5d68aa103e") {
+    name
+    age
+    books {
+      name
+      genre
+    }
+  }
+}
+------------------------------------------
+{
+  author(id: "5b1646cc09cafa5d68aa103e") {
+    name
+    age
+    books {
+      name
+      genre
+      author{
+        name
+      }
+    }
+  }
+}
+------------------------------------------
+{
+  book(id: "5b164856af9c2c5d78e7d63e") {
+    name
+    genre
+    author {
+      name
+      age
+    }
+  }
+}
+------------------------------------------
+{
+  book(id: "5b164856af9c2c5d78e7d63e") {
+    name
+    genre
+    author {
+      name
+      age
+      books{
+        name
+      }
+    }
+  }
+}
+------------------------------------------
+{
+  authors {
+    name
+    age
+    books {
+      name
+      genre
+    }
+  }
+}
+------------------------------------------
+{
+  books {
+    name
+    genre
+  	author {
+      name
+      age
+    }
+  }
+}
